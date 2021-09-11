@@ -1,7 +1,7 @@
 {% macro displayNews(habari_list) %}
     {% for news in habari_list %}
     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
-        <a href="{{news.id}}" class="">{{news.name}}</a><br>
+        <a href="/news/{{news.id}}" class="">{{news.name}}</a><br>
         
     </div>
     {% endfor %}

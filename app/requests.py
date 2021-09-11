@@ -62,7 +62,7 @@ def process_results(news_list):
 
 
 def get_article(id):
-    article_source_url = 'https://newsapi.org/v2/top-headlines?/sources={}apiKey=98d74de98d03442fa56cccbf5a2edb7c'.format(id)
+    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey=98d74de98d03442fa56cccbf5a2edb7c'.format(id)
     # print(article_source_url)
     with urllib.request.urlopen(article_source_url) as url:
         article_source_data = url.read()
