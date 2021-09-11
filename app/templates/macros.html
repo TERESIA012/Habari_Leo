@@ -1,32 +1,52 @@
 {% macro displayNews(habari_list) %}
-    {% for news in habari_list %}
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
-        <a href="/news/{{news.id}}" class="">{{news.name}}</a><br>
-        
-    </div>
-    {% endfor %}
+{% for news in habari_list %}
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
+    <a href="/news/{{news.id}}" class="">{{news.name}}</a><br>
+
+</div>
+{% endfor %}
 {% endmacro %}
 
+{% macro displayTrending(category_list) %}
+{% for category in category_list %}
 
-{% macro displayArticles(articles_list) %}
+<div class="card" style="width: 18rem;">
+
+    <img src="{{category.urlToImage}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{category.title}}</h5>
+        <p class="card-text">{{category.publishedAt}}</p>
+        <p class="card-text">{{category.author}}</p>
+        <p class="card-text">{{category.id}}</p>
+        <a href="{{category.url}}" class="btn" style="background-color:#ffb600;">Read More</a>
+    </div>
+    {% endfor %}
+    {% endmacro %}
+
+
+    {% macro displayArticles(articles_list) %}
     {% for articles in articles_list %}
 
+
+    <div class="col-3 mb-3 mt-2">
     <div class="card" style="width: 18rem;">
-       
+
         <img src="{{articles.urlToImage}}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">{{articles.title}}</h5>
-          <p class="card-text">{{articles.publishedAt}}</p>
-          <p class="card-text">{{articles.author}}</p>
-          <p class="card-text">{{articles.id}}</p>
-          <a href="{{articles.url}}" class="btn" style="background-color:#ffb600;">Read More</a>
+            <h5 class="card-title">{{articles.title}}</h5>
+            <p class="card-text">{{articles.publishedAt}}</p>
+            <p class="card-text">{{articles.author}}</p>
+            <p class="card-text">{{articles.id}}</p>
+            <a href="{{articles.url}}" class="btn" style="background-color:#ffb600;">Read More</a>
         </div>
-      <!-- </div>
+        </div>
+        </div>
+        <!-- </div>
         <p> {{articles.id}} </p>
         <p> {{articles.title}} </p>
         <p> {{articles.author}} </p>
 
         
     </div> -->
-    {% endfor %}
-{% endmacro %}
+        {% endfor %}
+        {% endmacro %}

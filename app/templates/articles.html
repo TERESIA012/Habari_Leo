@@ -9,13 +9,17 @@
 {% endblock %}
 
 
+<div class="container-fluid">
+    <div class="row">
 
-<body>
-    {% block content%}
-    <ul>
-    
-        {{ macro.displayArticles(articles)}}
-    
-    </ul>
-    {% endblock %}
-</body>
+        <body>
+            {% block content%}
+            <ul>
+
+                {{ macro.displayArticles(articles)}}
+
+            </ul>
+            {% endblock %}
+        </body>
+    </div>
+</div>

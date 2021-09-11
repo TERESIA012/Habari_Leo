@@ -31,7 +31,7 @@ def news_articles(id):
     return render_template('articles.html',articles=articles)
 
     
-@main.route('/category')
+@main.route('/category/<category>')
 def acquire_category(category):
     
     """
