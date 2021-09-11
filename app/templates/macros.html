@@ -1,0 +1,21 @@
+{% macro displayNews(habari_list) %}
+    {% for news in habari_list %}
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
+        <h2> {{ news.id}} </h2>
+        
+    </div>
+    {% endfor %}
+{% endmacro %}
+
+
+{% macro displayArticles(articles_list) %}
+    {% for articles in articles_list %}
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
+        <h2> {{articles.id}} </h2>
+        <h2> {{articles.title}} </h2>
+        <h2> {{articles.author}} </h2>
+
+        
+    </div>
+    {% endfor %}
+{% endmacro %}
