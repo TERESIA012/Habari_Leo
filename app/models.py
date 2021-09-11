@@ -5,7 +5,7 @@ class News:
 
     def __init__(self,id,name,description,category,language,url):
         self.id =id
-        self.title = name
+        self.name = name
         self.description= description
         self.category = category
         self.language = language
