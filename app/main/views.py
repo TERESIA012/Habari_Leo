@@ -39,7 +39,7 @@ def acquire_category(category):
     """
 
     category=get_category(category)
-    return render_template('articles.html',category=category)
+    return render_template('news.html',category=category)
 
 
 # @main.route('/articles/<id>')
