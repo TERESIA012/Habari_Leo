@@ -23,3 +23,18 @@ class Articles:
         self.urlToImage=urlToImage 
         self.publishedAt=publishedAt
         self.content=content
+        
+class Category:
+    
+    """
+    Category class to define the objects
+    """ 
+    def __init__(self,title,author,description,url,urlToImage,publishedAt,content): 
+        self.author=author
+        self.title=title
+        self.description=description
+        self.url=url
+        self.urlToImage=urlToImage 
+        self.publishedAt=publishedAt
+        self.content=content
+               

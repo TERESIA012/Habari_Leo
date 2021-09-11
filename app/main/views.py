@@ -1,6 +1,6 @@
 from flask import render_template,request,redirect,url_for
 from . import main
-from ..requests import get_article, get_news
+from ..requests import get_article, get_category, get_news
 
 
 
@@ -24,14 +24,22 @@ def index():
 def news_articles(id):
 
     """
-
+    View articles function
     """
     articles=get_article(id)
     
     return render_template('articles.html',articles=articles)
+
     
+@main.route('/category')
+def acquire_category(category):
+    
+    """
+    View category function
+    """
 
-
+    category=get_category(category)
+    return render_template('articles.html',category=category)
 
 
 # @main.route('/articles/<id>')
