@@ -38,6 +38,15 @@ def show_articles():
     """
     category=get_category('general')
     return render_template('general.html',category=category)
+
+
+@main.route('/technology')
+def show_technology():
+    """
+    Show articles function
+    """
+    category=get_category('technology')
+    return render_template('technology.html',category=category)
     
     
 

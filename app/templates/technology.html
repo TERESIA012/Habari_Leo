@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+
+{% block content%}
+
+
+<div class="row">
+   
+       {{macro.displayArticles(category)}}
+    </div>
+  
+
+
+{% endblock %}
