@@ -2,6 +2,12 @@
     background-color:#ff8d00;
 } */
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
     background-color:#fffff0;
     overflow-x: hidden;
