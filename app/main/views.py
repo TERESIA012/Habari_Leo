@@ -15,8 +15,8 @@ def index():
     '''
     
     my_news=get_news()
-    
-    return render_template('index.html',my_news=my_news)
+    category=get_category('sports')
+    return render_template('index.html',my_news=my_news,category=category)
 
 
 
@@ -30,16 +30,27 @@ def news_articles(id):
     
     return render_template('articles.html',articles=articles)
 
-    
-@main.route('/category/<category>')
-def acquire_category(category):
-    
-    """
-    View category function
-    """
 
-    category=get_category(category)
-    return render_template('news.html',category=category)
+@main.route('/general')
+def show_articles():
+    """
+    Show articles function
+    """
+    category=get_category('general')
+    return render_template('articles.html',category=category)
+    
+    
+
+    
+# @main.route('/category/<category>')
+# def acquire_category(category):
+    
+#     """
+#     View category function
+#     """
+
+   
+#     return render_template('news.html',category=category)
 
 
 # @main.route('/articles/<id>')

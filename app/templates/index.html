@@ -22,10 +22,19 @@
 
 <body>
     {% block content%}
-    <ul>
-        
+    <div class="row">
+        <div class="col-md-3">
             {{ macro.displayNews(my_news)}}
-       
-    </ul>
+        </div>
+        <div class="col-md-9">
+         <div class="row">
+            {{macro.displayTrending(category)}}
+         </div>
+        </div>
+    </div>
+
+
+
+
     {% endblock %}
 </body>
