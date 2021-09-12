@@ -4,4 +4,11 @@
 
 body{
     background-color:#fffff0;
+    overflow-x: hidden;
+}
+
+
+.card {
+    height:600px;
+    width:600px
 }
