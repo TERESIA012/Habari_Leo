@@ -19,7 +19,7 @@ def get_news():
     '''
     Function that gets the json response to our url request
     '''
-    get_news_url ='https://newsapi.org/v2/sources?apiKey=98d74de98d03442fa56cccbf5a2edb7c'
+    get_news_url ='https://newsapi.org/v2/sources?apiKey=d32cdd4ab5ac4bb081f769946fb5de7d'
 
     with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
@@ -62,7 +62,7 @@ def process_results(news_list):
 
 
 def get_article(id):
-    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey=98d74de98d03442fa56cccbf5a2edb7c'.format(id)
+    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey=d32cdd4ab5ac4bb081f769946fb5de7d'.format(id)
     # print(article_source_url)
     with urllib.request.urlopen(article_source_url) as url:
         article_source_data = url.read()
@@ -99,7 +99,7 @@ def process_articles_results(articles_list):
 
 
 def get_category(category):
-    article_source_url = 'https://newsapi.org/v2/top-headlines?category={}&apiKey=98d74de98d03442fa56cccbf5a2edb7c'.format(category)
+    article_source_url = 'https://newsapi.org/v2/top-headlines?category={}&apiKey=d32cdd4ab5ac4bb081f769946fb5de7d'.format(category)
     # print(article_source_url)
     with urllib.request.urlopen(article_source_url) as url:
         article_source_data = url.read()

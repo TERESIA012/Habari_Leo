@@ -42,29 +42,6 @@ def show_articles():
     
 
     
-# @main.route('/category/<category>')
-# def acquire_category(category):
-    
-#     """
-#     View category function
-#     """
-
-   
-#     return render_template('news.html',category=category)
-
-
-# @main.route('/articles/<id>')
-# def article(id):
-
-#     '''
-#     View article page function that returns the various article details page and its data
-#     '''
-#     my_article=article_source(id)
-#     title=f'{id}'
-   
-    
-    
-#     return render_template('articles.html',my_article=my_article,title=title )
 
 
 
