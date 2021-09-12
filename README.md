@@ -27,6 +27,7 @@ ___
 * Fork/Clone the repository
 * > $ git clone url
 * > code   .
+* > chmod a+x start.sh
 * > ./start.sh
 ___
 
