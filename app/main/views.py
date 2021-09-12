@@ -57,6 +57,14 @@ def show_health():
     """
     category=get_category('health')
     return render_template('afya.html',category=category)
+
+@main.route('/fashion')
+def show_health():
+    """
+    Show articles function
+    """
+    category=get_category('health')
+    return render_template('afya.html',category=category)
     
     
 
