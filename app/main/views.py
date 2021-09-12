@@ -37,7 +37,7 @@ def show_articles():
     Show articles function
     """
     category=get_category('general')
-    return render_template('articles.html',category=category)
+    return render_template('general.html',category=category)
     
     
 
