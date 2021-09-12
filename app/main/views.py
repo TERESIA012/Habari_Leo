@@ -47,6 +47,16 @@ def show_technology():
     """
     category=get_category('technology')
     return render_template('technology.html',category=category)
+
+
+
+@main.route('/health')
+def show_health():
+    """
+    Show articles function
+    """
+    category=get_category('health')
+    return render_template('afya.html',category=category)
     
     
 
