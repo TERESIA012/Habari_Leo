@@ -47,3 +47,20 @@ ___
 
 ___
 
+
+
+## Screenshots
+
+ <img src="./assets/1.png" class="card-img-top" alt="..." height="">
+
+ <img src="./assets/2.png" class="card-img-top" alt="..." height="">
+
+<img src="./assets/3.png" class="card-img-top" alt="..." height="">
+
+
+# &COPY;2021
+
+
+
+
+
